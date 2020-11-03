@@ -93,7 +93,7 @@ This code snippet displays the backend code that queries the IGDB database with 
 
 ![axios search snippet](./public/assets/searchAxios.png)
 
-This gif displays our api-routes file
+This gif displays our api-routes file.
 
 ![backend gif](./public/assets/backend.gif)
 
