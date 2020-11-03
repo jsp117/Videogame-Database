@@ -84,16 +84,6 @@ This code snippet displays the backend code that queries the IGDB database with 
 
 ---
 
-## Code Snippets
-
-This code is using an express post to add a recommended game from a user to another user who is listed in the database as friends.  
-![rec code snippet](./public/assets/recoP1.png)
-![rec code snippet](./public/assets/recoP2.png)
-
-
-This code uses an express post to call an axios search.
-![axios search snippet](./public/assets/searchAxios.png)
----
 ## Features
 
 - Search for your favorite video games
