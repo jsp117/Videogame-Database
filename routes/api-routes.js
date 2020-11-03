@@ -6,9 +6,9 @@ var games = "";
 var token = "";
 // var getToken = "./authorization.js";
 module.exports = function (app) {
-  // Using the passport.authenticate middleware with our local strategy.
-  // If the user has valid login credentials, send them to the members page.
-  // Otherwise the user will be sent an error
+
+  // passport.authenticate checks if a user is logged in with valid credentials before allowing them to access certain pages
+  // login route - gets access token
   app.post("/api/login", passport.authenticate("local"), function (req, res) {
     axios
       .post(
@@ -32,9 +32,7 @@ module.exports = function (app) {
       })
   });
 
-  // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
-  // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
-  // otherwise send back an error
+  //  sign up route
   app.post("/api/signup", function (req, res) {
     db.User.create({
       name: req.body.name,

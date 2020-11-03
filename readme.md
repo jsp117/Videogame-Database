@@ -19,6 +19,7 @@ We wanted to create an app that let users find their favorite games, learn more 
 * [Tech Used](#tech-used)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Guest Account](#guest-account)
 * [Features](#features)
 * [Deployed_Link](#deployed-link)
 * [Authors](#authors)
@@ -66,6 +67,16 @@ Simply create a profile with your name, email, password, and date of birth to st
 
 ---
 
+## Guest Account
+
+We have created a guest account for those that wish to use our application but not create their own account. 
+
+Login: guest@guest.com
+
+Password: password
+
+---
+
 ## Code Snippets
 
 This code snippet displays the backend code to recommend games. Using the /api/recommend route called from the front end using a post method, it checks the database to see if the user you are trying to recommend to is already your friend, then checks the recommendations table to see if the recommendation already exists, then inserts the game id, recommender id and recommendee id into the recommendation table.  
@@ -81,6 +92,10 @@ This code snippet displays the code required to get an access token for IGDB. It
 This code snippet displays the backend code that queries the IGDB database with the user input sent from the frontend. It requires an access token and a registered client ID. After the database is queried, the search html page is loaded and the results displayed.
 
 ![axios search snippet](./public/assets/searchAxios.png)
+
+This gif displays our api-routes file
+
+![backend gif](./public/assets/backend.gif)
 
 ---
 
