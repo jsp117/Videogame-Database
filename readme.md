@@ -20,6 +20,7 @@ We wanted to create an app that let users find their favorite games, learn more 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Guest Account](#guest-account)
+* [Database Diagram](#database-diagram)
 * [Features](#features)
 * [Deployed_Link](#deployed-link)
 * [Authors](#authors)
@@ -76,6 +77,12 @@ Login: guest@guest.com
 Password: password
 
 ---
+
+## Database Diagram
+
+This diagram shows us the MySQL database layout:
+
+![MySQL Diagram](./public/assets/VGDatabase.png)
 
 ## Code Snippets
 
